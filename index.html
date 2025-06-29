@@ -16,7 +16,7 @@
       background-color: #000;
     }
 
-    /* Judul di tengah atas */
+    /* Judul atas */
     .header {
       width: 100%;
       background-color: rgba(0, 0, 0, 0.7);
@@ -40,7 +40,7 @@
       100% { opacity: 1; }
     }
 
-    /* Hero Section dengan gambar */
+    /* Hero Section */
     .hero {
       background-image: url('images/IMG-20250629-WA0000.jpg');
       background-size: cover;
@@ -51,6 +51,7 @@
       justify-content: center;
       text-align: center;
       position: relative;
+      flex-direction: column;
     }
     .overlay {
       position: absolute;
@@ -68,6 +69,15 @@
     .content h2 {
       font-size: 28px;
       margin-bottom: 15px;
+    }
+    .product-image {
+      margin-top: 10px;
+    }
+    .product-image img {
+      width: 250px;
+      max-width: 90%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.7);
     }
     .button {
       padding: 10px 20px;
@@ -87,7 +97,7 @@
 </head>
 <body>
 
-  <!-- Judul Tengah Atas -->
+  <!-- Judul Atas -->
   <div class="header">
     <h1>Lala Beauty</h1>
   </div>
@@ -97,6 +107,12 @@
     <div class="overlay"></div>
     <div class="content">
       <h2>200 Ribu Langsung Dapat Produk!</h2>
+
+      <!-- Gambar di bawah tulisan -->
+      <div class="product-image">
+        <img src="images/IMG-20250629-WA0000.jpg" alt="Produk Lala Beauty">
+      </div>
+
       <a href="#produk" class="button">Lihat Produk</a>
     </div>
   </div>
