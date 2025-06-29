@@ -10,6 +10,7 @@
       padding: 0;
       box-sizing: border-box;
     }
+
     body, html {
       height: 100%;
       font-family: 'Poppins', sans-serif;
@@ -27,6 +28,7 @@
       text-align: center;
       z-index: 1000;
     }
+
     .header h1 {
       font-size: 32px;
       color: gold;
@@ -36,11 +38,10 @@
     }
 
     .header p {
-      font-size: 14px;
+      font-size: 16px;
       color: white;
       margin-top: 5px;
       font-weight: 300;
-      letter-spacing: 0.5px;
     }
 
     @keyframes blink {
@@ -62,6 +63,7 @@
       position: relative;
       flex-direction: column;
     }
+
     .overlay {
       position: absolute;
       width: 100%;
@@ -70,11 +72,14 @@
       top: 0;
       left: 0;
     }
+
     .content {
       position: relative;
       z-index: 1;
       color: white;
+      padding: 0 20px;
     }
+
     .content h2 {
       font-size: 24px;
       margin-bottom: 15px;
@@ -84,9 +89,10 @@
       margin-top: 10px;
       animation: blink-img 2.5s infinite;
     }
+
     .product-image img {
-      width: 250px;
-      max-width: 90%;
+      width: 300px;
+      max-width: 100%;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.7);
     }
@@ -104,17 +110,67 @@
       justify-content: center;
       flex-wrap: wrap;
     }
+
     .action-buttons a {
-      padding: 8px 18px;
+      padding: 10px 20px;
       background-color: gold;
       color: black;
       border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
       transition: background-color 0.3s;
+      font-size: 16px;
     }
+
     .action-buttons a:hover {
       background-color: #e0af00;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 24px;
+      }
+
+      .header p {
+        font-size: 14px;
+      }
+
+      .content h2 {
+        font-size: 20px;
+      }
+
+      .product-image img {
+        width: 220px;
+      }
+
+      .action-buttons a {
+        font-size: 14px;
+        padding: 8px 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .header h1 {
+        font-size: 20px;
+      }
+
+      .header p {
+        font-size: 12px;
+      }
+
+      .content h2 {
+        font-size: 18px;
+      }
+
+      .product-image img {
+        width: 180px;
+      }
+
+      .action-buttons a {
+        font-size: 12px;
+        padding: 6px 12px;
+      }
     }
 
   </style>
@@ -148,4 +204,5 @@
 
 </body>
 </html>
+
 
