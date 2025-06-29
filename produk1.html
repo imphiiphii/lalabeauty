@@ -1,133 +1,128 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Zukha Cleaning Soap</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zukha Cleansing Soap</title>
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
       font-family: 'Poppins', sans-serif;
-      background: url('images/mint-water-bg.jpg') center/cover no-repeat fixed;
+    }
+
+    .hero {
+      background-image: url('images/bgproduk1.jpg'); /* Ganti path sesuai lokasi */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
       position: relative;
-      color: #ffffff;
+      flex-direction: column;
+      padding: 20px;
     }
 
-    /* Overlay untuk kontras tulisan */
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.5); /* Layer gelap */
-      z-index: -1;
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.35);
+      top: 0;
+      left: 0;
     }
 
-    .container {
-      max-width: 850px;
-      margin: 60px auto;
-      background: rgba(0, 0, 0, 0.6); /* Container semi-transparan */
-      border-radius: 16px;
-      padding: 40px 30px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    .content {
+      position: relative;
+      z-index: 2;
+      color: white;
+      max-width: 700px;
     }
 
-    h1, h2, h3 {
-      text-align: center;
-      text-shadow: 1px 1px 4px #000000;
-    }
-
-    h1 {
-      font-size: 32px;
-      color: #00ffcc;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      font-size: 20px;
-      color: #f1f1f1;
-      margin-bottom: 30px;
-    }
-
-    .emoji-title {
-      font-size: 18px;
-      margin-top: 25px;
+    .product-title {
+      font-size: 28px;
       font-weight: bold;
-      color: #ffeb3b;
-      text-shadow: 1px 1px 3px #000;
-    }
-
-    ul {
-      padding-left: 20px;
-      font-size: 16px;
-      color: #ffffff;
+      margin-bottom: 15px;
+      background: rgba(255, 255, 255, 0.25);
+      padding: 10px 20px;
+      border-radius: 10px;
+      color: #fff;
       text-shadow: 1px 1px 2px #000;
+      animation: blinkText 2.5s infinite;
     }
 
-    li {
-      margin-bottom: 12px;
+    .product-description {
+      font-size: 16px;
+      line-height: 1.6;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 15px;
+      border-radius: 12px;
+      margin-top: 10px;
+      color: #fff;
     }
 
-    .slogan {
-      margin-top: 30px;
-      font-style: italic;
+    .back-button {
+      margin-top: 25px;
+    }
+
+    .back-button a {
+      padding: 10px 20px;
+      background-color: gold;
+      color: black;
       font-weight: bold;
-      text-align: center;
-      color: #00ffc3;
-      text-shadow: 1px 1px 3px #000;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s ease;
     }
 
-    @media (max-width: 600px) {
-      .container {
-        margin: 20px;
-        padding: 20px;
-      }
+    .back-button a:hover {
+      background-color: #e0af00;
+    }
 
-      h1 {
-        font-size: 26px;
-      }
+    @keyframes blinkText {
+      0% { opacity: 1; }
+      50% { opacity: 0.7; }
+      100% { opacity: 1; }
+    }
 
-      h2 {
-        font-size: 18px;
+    @media (max-width: 768px) {
+      .product-title {
+        font-size: 20px;
+      }
+      .product-description {
+        font-size: 14px;
       }
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <h1>🌿 Zukha - Heavenly Secret</h1>
-    <h2>Sabun Kecantikan Alami untuk Wajah & Tubuh</h2>
-
-    <div class="emoji-title">✨ Manfaat Utama Zukha Beauty Soap:</div>
-    <ul>
-      <li><strong>Mencerahkan Kulit Secara Alami</strong> — Membantu menyamarkan noda hitam dan membuat kulit tampak lebih cerah merata.</li>
-      <li><strong>Membersihkan Hingga ke Pori-pori</strong> — Mengangkat kotoran dan minyak tanpa membuat kulit kering.</li>
-      <li><strong>Melembapkan dan Menutrisi</strong> — Menjaga kelembaban kulit dengan pelembap alami.</li>
-      <li><strong>Aman untuk Semua Jenis Kulit</strong> — Lembut dan cocok bahkan untuk kulit sensitif.</li>
-    </ul>
-
-    <div class="emoji-title">🌱 Kandungan Bahan Alami Pilihan:</div>
-    <ul>
-      <li><strong>Ekstrak Daun Sirih:</strong> Antibakteri alami untuk mengurangi jerawat.</li>
-      <li><strong>Olive Oil (Minyak Zaitun):</strong> Melembapkan dan kaya antioksidan.</li>
-      <li><strong>Aloe Vera:</strong> Menenangkan dan mempercepat regenerasi sel kulit.</li>
-      <li><strong>Vitamin E:</strong> Menjaga elastisitas dan mencegah penuaan dini.</li>
-      <li><strong>Minyak Kelapa Murni:</strong> Membersihkan lembut sekaligus melembapkan.</li>
-    </ul>
-
-    <div class="emoji-title">🌸 Kenapa Pilih Zukha?</div>
-    <ul>
-      <li>✅ Terbuat dari bahan alami</li>
-      <li>✅ Tanpa bahan kimia keras</li>
-      <li>✅ Tidak membuat kulit kering</li>
-      <li>✅ Aroma lembut dan menyegarkan</li>
-      <li>✅ Telah dipercaya banyak pelanggan</li>
-    </ul>
-
-    <div class="slogan">💬 “Cantik itu Rahasia, Kini Zukha yang Membawanya”</div>
-    <div class="slogan">💬 “Kulit Sehat, Cerah, dan Bersih — Bersama Zukha!”</div>
+  <div class="hero">
+    <div class="overlay"></div>
+    <div class="content">
+      <div class="product-title">Zukha Cleansing Soap</div>
+      <div class="product-description">
+        🌿 Sabun pembersih alami dengan ekstrak herbal pilihan untuk kulit sehat dan bersih. <br><br>
+        Mengandung bahan alami seperti <strong>Tea Tree Oil</strong>, <strong>Lidah Buaya</strong>, dan <strong>Charcoal aktif</strong> yang membantu: <br><br>
+        ✅ Mengangkat kotoran dan minyak berlebih<br>
+        ✅ Menenangkan kulit sensitif<br>
+        ✅ Mencerahkan kulit secara alami<br>
+        ✅ Cocok untuk wajah dan badan<br><br>
+        Gunakan setiap hari untuk hasil maksimal. Rasakan kesegaran dan kelembutan alami dari Zukha.
+      </div>
+      <div class="back-button">
+        <a href="index.html">← Kembali ke Halaman Utama</a>
+      </div>
+    </div>
   </div>
 
 </body>
