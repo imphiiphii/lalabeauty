@@ -16,7 +16,7 @@
       background-color: #000;
     }
 
-    /* Judul atas */
+    /* Judul Atas */
     .header {
       width: 100%;
       background-color: rgba(0, 0, 0, 0.7);
@@ -67,7 +67,7 @@
       color: white;
     }
     .content h2 {
-      font-size: 28px;
+      font-size: 24px;
       margin-bottom: 15px;
     }
     .product-image {
@@ -79,17 +79,23 @@
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.7);
     }
-    .button {
-      padding: 10px 20px;
+    .action-buttons {
+      margin-top: 15px;
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .action-buttons a {
+      padding: 8px 18px;
       background-color: gold;
       color: black;
       border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
-      display: inline-block;
-      margin-top: 10px;
+      transition: background-color 0.3s;
     }
-    .button:hover {
+    .action-buttons a:hover {
       background-color: #e0af00;
     }
 
@@ -106,14 +112,18 @@
   <div class="hero">
     <div class="overlay"></div>
     <div class="content">
-      <h2>200 Ribu Langsung Dapat Produk!</h2>
+      <h2>PROMO!! Mau Cantik tapi ga mau MAHAL?</h2>
 
-      <!-- Gambar di bawah tulisan -->
+      <!-- Gambar Produk -->
       <div class="product-image">
         <img src="images/IMG-20250629-WA0000.jpg" alt="Produk Lala Beauty">
       </div>
 
-      <a href="#produk" class="button">Lihat Produk</a>
+      <!-- Tombol Aksi -->
+      <div class="action-buttons">
+        <a href="#detail">Detail Produk</a>
+        <a href="#pesan">Pesan DISINI</a>
+      </div>
     </div>
   </div>
 
