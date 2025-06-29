@@ -3,50 +3,127 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Produk 2 - Superplan Serum</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <title>Superplan Face & Body Brightening Serum</title>
   <style>
-    body {
-      font-family: 'Poppins', sans-serif;
+    * {
       margin: 0;
-      background: url('images/bgproduk2.jpg') no-repeat center center fixed;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .hero {
+      background-image: url('images/bgproduk2.jpg'); /* Ganti path sesuai lokasi */
       background-size: cover;
-      color: white;
-      padding: 100px 20px 50px;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
+      position: relative;
+      flex-direction: column;
+      padding: 20px;
     }
 
-    .product-image {
-      margin-bottom: 20px;
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.35);
+      top: 0;
+      left: 0;
     }
 
-    .product-image img {
-      width: 300px;
-      max-width: 90%;
+    .content {
+      position: relative;
+      z-index: 2;
+      color: white;
+      max-width: 700px;
+    }
+
+    .product-title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      background: rgba(255, 255, 255, 0.25);
+      padding: 10px 20px;
+      border-radius: 10px;
+      color: #fff;
+      text-shadow: 1px 1px 2px #000;
+      animation: blinkText 2.5s infinite;
+    }
+
+    .product-description {
+      font-size: 16px;
+      line-height: 1.6;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 15px;
       border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.7);
+      margin-top: 10px;
+      color: #fff;
     }
 
-    .product-label {
+    .back-button {
+      margin-top: 25px;
+    }
+
+    .back-button a {
+      padding: 10px 20px;
       background-color: gold;
       color: black;
       font-weight: bold;
-      padding: 10px 20px;
-      border-radius: 10px;
-      display: inline-block;
-      font-size: 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button a:hover {
+      background-color: #e0af00;
+    }
+
+    @keyframes blinkText {
+      0% { opacity: 1; }
+      50% { opacity: 0.7; }
+      100% { opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      .product-title {
+        font-size: 20px;
+      }
+      .product-description {
+        font-size: 14px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <div class="product-image">
-    <a href="produk2-detail.html">
-      <img src="images/produk2.jpg" alt="Superplan Face & Body Brightening Serum">
-    </a>
+  <div class="hero">
+    <div class="overlay"></div>
+    <div class="content">
+      <div class="product-title">Superplan Face & Body Brightening Serum</div>
+      <div class="product-description">
+        ✨ Hadir dengan formula ringan yang lembut di kulit dan mudah menyerap. <br><br>
+        💧 Diperkaya bahan aktif pilihan seperti <strong>Niacinamide</strong>, <strong>Aloe Vera</strong>, dan <strong>Vitamin C</strong> untuk membantu mencerahkan, melembapkan, dan menutrisi kulit.<br><br>
+        Cocok untuk semua jenis kulit dan bisa digunakan untuk wajah maupun tubuh. Dapatkan kulit cerah alami, segar, dan lembut hanya dengan pemakaian rutin.<br><br>
+        ✅ Tidak lengket<br>
+        ✅ Tidak menyebabkan iritasi<br>
+        ✅ Memberikan efek glowing alami<br><br>
+        🌿 Pilihan terbaik untuk tampil percaya diri setiap hari.
+      </div>
+      <div class="back-button">
+        <a href="index.html">← Kembali ke Halaman Utama</a>
+      </div>
+    </div>
   </div>
-
-  <div class="product-label">Superplan Face &amp; Body Brightening Serum</div>
 
 </body>
 </html>
