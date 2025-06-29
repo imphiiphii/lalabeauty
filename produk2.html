@@ -1,129 +1,80 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Superplan Face & Body Brightening Serum</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Superplan Brightening Serum</title>
   <style>
-    * {
+    body {
       margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body, html {
-      height: 100%;
       font-family: 'Poppins', sans-serif;
-    }
-
-    .hero {
-      background-image: url('images/bgproduk2.jpg'); /* Ganti path sesuai lokasi */
+      background: url('images/bgproduk2.jpg') no-repeat center center fixed;
       background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      position: relative;
-      flex-direction: column;
-      padding: 20px;
+      color: #fff;
     }
 
-    .overlay {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.35);
-      top: 0;
-      left: 0;
+    .container {
+      padding: 100px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: rgba(0,0,0,0.6);
+      border-radius: 16px;
     }
 
-    .content {
-      position: relative;
-      z-index: 2;
-      color: white;
-      max-width: 700px;
+    .product-image {
+      display: block;
+      margin: 0 auto 20px;
+      width: 280px;
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.7);
     }
 
     .product-title {
-      font-size: 28px;
-      font-weight: bold;
-      margin-bottom: 15px;
-      background: rgba(255, 255, 255, 0.25);
+      background-color: gold;
+      color: black;
       padding: 10px 20px;
-      border-radius: 10px;
-      color: #fff;
-      text-shadow: 1px 1px 2px #000;
-      animation: blinkText 2.5s infinite;
+      border-radius: 8px;
+      display: inline-block;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
     }
 
     .product-description {
       font-size: 16px;
-      line-height: 1.6;
-      background: rgba(0, 0, 0, 0.4);
-      padding: 15px;
-      border-radius: 12px;
-      margin-top: 10px;
-      color: #fff;
+      line-height: 1.7;
+      margin-top: 20px;
     }
 
-    .back-button {
-      margin-top: 25px;
-    }
-
-    .back-button a {
-      padding: 10px 20px;
-      background-color: gold;
-      color: black;
-      font-weight: bold;
-      border-radius: 8px;
-      text-decoration: none;
-      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
-      transition: background-color 0.3s ease;
-    }
-
-    .back-button a:hover {
-      background-color: #e0af00;
-    }
-
-    @keyframes blinkText {
-      0% { opacity: 1; }
-      50% { opacity: 0.7; }
-      100% { opacity: 1; }
-    }
-
-    @media (max-width: 768px) {
+    @media (max-width: 600px) {
       .product-title {
         font-size: 20px;
-      }
-      .product-description {
-        font-size: 14px;
+        padding: 8px 14px;
       }
     }
   </style>
 </head>
 <body>
-
-  <div class="hero">
-    <div class="overlay"></div>
-    <div class="content">
-      <div class="product-title">Superplan Face & Body Brightening Serum</div>
-      <div class="product-description">
-        ✨ Hadir dengan formula ringan yang lembut di kulit dan mudah menyerap. <br><br>
-        💧 Diperkaya bahan aktif pilihan seperti <strong>Niacinamide</strong>, <strong>Aloe Vera</strong>, dan <strong>Vitamin C</strong> untuk membantu mencerahkan, melembapkan, dan menutrisi kulit.<br><br>
-        Cocok untuk semua jenis kulit dan bisa digunakan untuk wajah maupun tubuh. Dapatkan kulit cerah alami, segar, dan lembut hanya dengan pemakaian rutin.<br><br>
-        ✅ Tidak lengket<br>
-        ✅ Tidak menyebabkan iritasi<br>
-        ✅ Memberikan efek glowing alami<br><br>
-        🌿 Pilihan terbaik untuk tampil percaya diri setiap hari.
-      </div>
-      <div class="back-button">
-        <a href="index.html">← Kembali ke Halaman Utama</a>
-      </div>
+  <div class="container">
+    <img src="images/produk2.jpg" alt="Superplan Serum" class="product-image" />
+    <div class="product-title">Superplan Face & Body Brightening Serum</div>
+    <div class="product-description">
+      <p><strong>Superplan Brightening Serum</strong> adalah serum wajah dan tubuh yang dirancang untuk membantu mencerahkan kulit secara merata dan alami. Diformulasikan dengan bahan-bahan unggulan yang menyegarkan dan mudah menyerap.</p>
+      <p><strong>Kandungan utama:</strong> <br/>
+        - <strong>Niacinamide</strong> untuk mencerahkan dan meratakan warna kulit<br/>
+        - <strong>Vitamin C</strong> sebagai antioksidan dan pelindung kulit<br/>
+        - <strong>Aloe Vera</strong> untuk hidrasi dan efek soothing<br/>
+        - <strong>Licorice Extract</strong> untuk mengatasi flek hitam
+      </p>
+      <p><strong>Manfaat:</strong></p>
+      <ul>
+        <li>Mencerahkan wajah & tubuh</li>
+        <li>Menjadikan kulit tampak lebih sehat & glowing</li>
+        <li>Mengurangi noda hitam & warna kulit tidak merata</li>
+        <li>Memberikan kelembapan ekstra tanpa lengket</li>
+      </ul>
     </div>
   </div>
-
 </body>
 </html>
