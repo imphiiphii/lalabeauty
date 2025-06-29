@@ -1,129 +1,75 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Zukha Cleaning Soap</title>
   <style>
-    * {
+    body {
       margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body, html {
-      height: 100%;
       font-family: 'Poppins', sans-serif;
-    }
-
-    .hero {
-      background-image: url('images/bgproduk1.jpg'); /* Ganti path sesuai lokasi */
+      background: url('images/bgproduk1.jpg') no-repeat center center fixed;
       background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      position: relative;
-      flex-direction: column;
-      padding: 20px;
+      color: #fff;
     }
 
-    .overlay {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.35);
-      top: 0;
-      left: 0;
+    .container {
+      padding: 100px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: rgba(0,0,0,0.6);
+      border-radius: 16px;
     }
 
-    .content {
-      position: relative;
-      z-index: 2;
-      color: white;
-      max-width: 700px;
+    .product-image {
+      display: block;
+      margin: 0 auto 20px;
+      width: 280px;
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.7);
     }
 
     .product-title {
-      font-size: 28px;
-      font-weight: bold;
-      margin-bottom: 15px;
-      background: rgba(255, 255, 255, 0.25);
+      background-color: gold;
+      color: black;
       padding: 10px 20px;
-      border-radius: 10px;
-      color: #fff;
-      text-shadow: 1px 1px 2px #000;
-      animation: blinkText 2.5s infinite;
+      border-radius: 8px;
+      display: inline-block;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
     }
 
     .product-description {
       font-size: 16px;
-      line-height: 1.6;
-      background: rgba(0, 0, 0, 0.4);
-      padding: 15px;
-      border-radius: 12px;
-      margin-top: 10px;
-      color: #fff;
+      line-height: 1.7;
+      margin-top: 20px;
     }
 
-    .back-button {
-      margin-top: 25px;
-    }
-
-    .back-button a {
-      padding: 10px 20px;
-      background-color: gold;
-      color: black;
-      font-weight: bold;
-      border-radius: 8px;
-      text-decoration: none;
-      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
-      transition: background-color 0.3s ease;
-    }
-
-    .back-button a:hover {
-      background-color: #e0af00;
-    }
-
-    @keyframes blinkText {
-      0% { opacity: 1; }
-      50% { opacity: 0.7; }
-      100% { opacity: 1; }
-    }
-
-    @media (max-width: 768px) {
+    @media (max-width: 600px) {
       .product-title {
         font-size: 20px;
-      }
-      .product-description {
-        font-size: 14px;
+        padding: 8px 14px;
       }
     }
   </style>
 </head>
 <body>
-
-  <div class="hero">
-    <div class="overlay"></div>
-    <div class="content">
-      <div class="product-title">Zukha Cleaning Soap</div>
-      <div class="product-description">
-        🌿 Sabun pembersih alami dengan ekstrak herbal pilihan untuk kulit sehat dan bersih. <br><br>
-        Mengandung bahan alami seperti <strong>Tea Tree Oil</strong>, <strong>Lidah Buaya</strong>, dan <strong>Charcoal aktif</strong> yang membantu: <br><br>
-        ✅ Mengangkat kotoran dan minyak berlebih<br>
-        ✅ Menenangkan kulit sensitif<br>
-        ✅ Mencerahkan kulit secara alami<br>
-        ✅ Cocok untuk wajah dan badan<br><br>
-        Gunakan setiap hari untuk hasil maksimal. Rasakan kesegaran dan kelembutan alami dari Zukha.
-      </div>
-      <div class="back-button">
-        <a href="index.html">← Kembali ke Halaman Utama</a>
-      </div>
+  <div class="container">
+    <img src="images/produk1.jpg" alt="Zukha Cleaning Soap" class="product-image" />
+    <div class="product-title">Zukha Cleaning Soap</div>
+    <div class="product-description">
+      <p><strong>Zukha Cleaning Soap</strong> adalah sabun herbal pencerah yang efektif membantu membersihkan wajah dan tubuh dari kotoran serta sisa makeup. Formulanya ringan dan menyegarkan, cocok digunakan untuk semua jenis kulit, termasuk kulit sensitif.</p>
+      <p>Dengan kandungan alami seperti <strong>ekstrak daun bidara</strong>, <strong>tea tree oil</strong>, dan <strong>collagen</strong>, sabun ini membantu menenangkan kulit, mengatasi jerawat, dan menjaga kelembapan alami.</p>
+      <p><strong>Manfaat:</strong></p>
+      <ul>
+        <li>Mencerahkan kulit kusam</li>
+        <li>Membersihkan pori-pori secara menyeluruh</li>
+        <li>Membantu meredakan jerawat</li>
+        <li>Memberikan efek segar dan lembap</li>
+      </ul>
     </div>
   </div>
-
 </body>
 </html>
