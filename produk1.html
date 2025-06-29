@@ -1,71 +1,93 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Zukha Cleaning Soap</title>
   <style>
     body {
       margin: 0;
       padding: 0;
       font-family: 'Poppins', sans-serif;
-      color: #2c3e50;
-      background: 
-        linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
-        url('images/mint-water-bg.jpg') center/cover no-repeat fixed;
+      background: url('images/mint-water-bg.jpg') center/cover no-repeat fixed;
+      position: relative;
+      color: #ffffff;
     }
+
+    /* Overlay untuk kontras tulisan */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Layer gelap */
+      z-index: -1;
+    }
+
     .container {
       max-width: 850px;
       margin: 60px auto;
-      background: rgba(255, 255, 255, 0.95);
+      background: rgba(0, 0, 0, 0.6); /* Container semi-transparan */
       border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
       padding: 40px 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     }
-    h1 {
-      font-size: 30px;
+
+    h1, h2, h3 {
       text-align: center;
-      color: #27ae60;
+      text-shadow: 1px 1px 4px #000000;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #00ffcc;
       margin-bottom: 10px;
     }
+
     h2 {
-      text-align: center;
       font-size: 20px;
+      color: #f1f1f1;
       margin-bottom: 30px;
-      color: #7f8c8d;
     }
+
     .emoji-title {
       font-size: 18px;
       margin-top: 25px;
-      color: #2c3e50;
       font-weight: bold;
+      color: #ffeb3b;
+      text-shadow: 1px 1px 3px #000;
     }
+
     ul {
-      margin-top: 10px;
       padding-left: 20px;
       font-size: 16px;
+      color: #ffffff;
+      text-shadow: 1px 1px 2px #000;
     }
+
     li {
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
-    .highlight {
-      color: #2d3436;
-    }
+
     .slogan {
       margin-top: 30px;
       font-style: italic;
-      color: #16a085;
       font-weight: bold;
       text-align: center;
+      color: #00ffc3;
+      text-shadow: 1px 1px 3px #000;
     }
+
     @media (max-width: 600px) {
       .container {
         margin: 20px;
         padding: 20px;
       }
+
       h1 {
-        font-size: 24px;
+        font-size: 26px;
       }
+
       h2 {
         font-size: 18px;
       }
@@ -78,7 +100,7 @@
     <h1>🌿 Zukha - Heavenly Secret</h1>
     <h2>Sabun Kecantikan Alami untuk Wajah & Tubuh</h2>
 
-    <div class="emoji-title">✨ <span class="highlight">Manfaat Utama Zukha Beauty Soap:</span></div>
+    <div class="emoji-title">✨ Manfaat Utama Zukha Beauty Soap:</div>
     <ul>
       <li><strong>Mencerahkan Kulit Secara Alami</strong> — Membantu menyamarkan noda hitam dan membuat kulit tampak lebih cerah merata.</li>
       <li><strong>Membersihkan Hingga ke Pori-pori</strong> — Mengangkat kotoran dan minyak tanpa membuat kulit kering.</li>
@@ -86,7 +108,7 @@
       <li><strong>Aman untuk Semua Jenis Kulit</strong> — Lembut dan cocok bahkan untuk kulit sensitif.</li>
     </ul>
 
-    <div class="emoji-title">🌱 <span class="highlight">Kandungan Bahan Alami Pilihan:</span></div>
+    <div class="emoji-title">🌱 Kandungan Bahan Alami Pilihan:</div>
     <ul>
       <li><strong>Ekstrak Daun Sirih:</strong> Antibakteri alami untuk mengurangi jerawat.</li>
       <li><strong>Olive Oil (Minyak Zaitun):</strong> Melembapkan dan kaya antioksidan.</li>
@@ -95,7 +117,7 @@
       <li><strong>Minyak Kelapa Murni:</strong> Membersihkan lembut sekaligus melembapkan.</li>
     </ul>
 
-    <div class="emoji-title">🌸 <span class="highlight">Kenapa Pilih Zukha?</span></div>
+    <div class="emoji-title">🌸 Kenapa Pilih Zukha?</div>
     <ul>
       <li>✅ Terbuat dari bahan alami</li>
       <li>✅ Tanpa bahan kimia keras</li>
@@ -110,5 +132,3 @@
 
 </body>
 </html>
-
-
