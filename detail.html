@@ -1,1 +1,69 @@
-<a href="detail.html">Detail Produk</a>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Produk - Lala Beauty</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #111;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: gold;
+      margin-bottom: 30px;
+    }
+
+    .product-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .product-gallery a {
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+
+    .product-gallery a:hover {
+      transform: scale(1.05);
+    }
+
+    .product-gallery img {
+      width: 300px;
+      max-width: 90vw;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      .product-gallery img {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Detail Produk Lala Beauty</h1>
+
+  <div class="product-gallery">
+    <!-- Gambar 1 -->
+    <a href="produk1.html">
+      <img src="images/produk1.jpg" alt="Produk 1">
+    </a>
+
+    <!-- Gambar 2 -->
+    <a href="produk2.html">
+      <img src="images/produk2.jpg" alt="Produk 2">
+    </a>
+  </div>
+
+</body>
+</html>
