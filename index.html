@@ -34,6 +34,7 @@
       margin: 0;
       animation: blink 2.5s infinite;
     }
+
     @keyframes blink {
       0% { opacity: 1; }
       50% { opacity: 0.5; }
@@ -70,8 +71,10 @@
       font-size: 24px;
       margin-bottom: 15px;
     }
+
     .product-image {
       margin-top: 10px;
+      animation: blink-img 2.5s infinite;
     }
     .product-image img {
       width: 250px;
@@ -79,6 +82,13 @@
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.7);
     }
+
+    @keyframes blink-img {
+      0% { opacity: 1; }
+      50% { opacity: 0.5; }
+      100% { opacity: 1; }
+    }
+
     .action-buttons {
       margin-top: 15px;
       display: flex;
@@ -114,15 +124,15 @@
     <div class="content">
       <h2>PROMO!! Mau Cantik tapi ga mau MAHAL?</h2>
 
-      <!-- Gambar Produk -->
+      <!-- Gambar Produk Berkedip -->
       <div class="product-image">
         <img src="images/IMG-20250629-WA0000.jpg" alt="Produk Lala Beauty">
       </div>
 
       <!-- Tombol Aksi -->
       <div class="action-buttons">
-        <a href="#detail">Detail Produk</a>
-        <a href="#pesan">Pesan DISINI</a>
+        <a href="detail.html">Detail Produk</a>
+        <a href="https://wa.me/62xxxxxxxxxx" target="_blank">Pesan DISINI</a>
       </div>
     </div>
   </div>
